@@ -54,6 +54,10 @@ public class MyController {
             
     //STORE AUTHOR INTO DB
     authorRepository.save(author);
+    
+    //CHANGE TO NEW YORK ADDRESS BY MANUALLY SETTING addressId AFTER ADDRESS WAS SAVED THROUGH AUTHOR
+    //author.addressId = author.address.id;
+    //authorRepository.save(author);
 
     //RETURN MESSAGE
     return "Author was stored into DB";
